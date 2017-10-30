@@ -8,8 +8,8 @@
 
 #import <AVKit/AVKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import <AFNetworking/UIImageView+AFNetworking.h>
 
-#import "UIImageView+AFNetworking.h"
 #import "FullScreenViewerViewController.h"
 
 @interface FullScreenViewerViewController () <UIScrollViewDelegate>
