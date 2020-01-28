@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name           = 'BlazeFullScreenViewer'
-  s.version        = '0.0.2'
+  s.version        = '0.0.3'
   s.summary        = 'View photos fullscreen including using blaze media data'
   s.license 	   = 'MIT'
   s.description    = 'View photos fullscreen including paging/zooming using blaze media data'

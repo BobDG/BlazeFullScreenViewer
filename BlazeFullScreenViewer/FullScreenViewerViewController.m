@@ -196,6 +196,7 @@
 +(void)showFullScreenViewerFromViewController:(UIViewController *)viewController mediaData:(NSArray <BlazeMediaData *> *)mediaArray index:(int)index
 {
     FullScreenViewerViewController *vc = [self fullScreenViewerWithMediaData:mediaArray index:index];
+    vc.modalPresentationStyle = UIModalPresentationFullScreen;
     [viewController presentViewController:vc animated:TRUE completion:nil];
     CFRunLoopWakeUp(CFRunLoopGetCurrent());
 }
@@ -224,6 +225,7 @@
     
     //Create player
     AVPlayerViewController *playerViewController = [AVPlayerViewController new];
+    playerViewController.modalPresentationStyle = UIModalPresentationFullScreen;
     AVPlayerItem *item = [AVPlayerItem playerItemWithAsset:smallVC.player.currentItem.asset];
     AVPlayer *player = [[AVPlayer alloc] initWithPlayerItem:item];
     playerViewController.player = player;
