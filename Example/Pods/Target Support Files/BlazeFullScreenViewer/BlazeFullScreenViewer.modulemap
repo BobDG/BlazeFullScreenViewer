@@ -1,6 +1,0 @@
-framework module BlazeFullScreenViewer {
-  umbrella header "BlazeFullScreenViewer-umbrella.h"
-
-  export *
-  module * { export * }
-}
